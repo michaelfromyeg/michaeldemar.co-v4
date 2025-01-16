@@ -1,17 +1,17 @@
 {
-    "name": "michaeldemar.co",
-    "description": "michaeldemar.co",
+    "name": "michaeldemar.co-v4",
+    "description": "michaeldemar.co-v4",
     "private": true,
     "version": "0.1.0",
     "author": "Michael DeMarco <michaelfromyeg@gmail.com>",
     "bugs": {
-        "url": "https://github.com/michaelfromyeg/michaeldemar.co/issues"
+        "url": "https://github.com/michaelfromyeg/michaeldemar.co-v4/issues"
     },
     "engines": {
         "node": ">=18.0.0",
         "npm": ">=9.0.0"
     },
-    "homepage": ".",
+    "homepage": "https://michaelfromyeg.github.io/michaeldemar.co-v4",
     "keywords": [
         "gatsby",
         "michael demarco"
@@ -20,12 +20,7 @@
     "main": "n/a",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/michaelfromyeg/michaeldemar.co"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
+        "url": "git+https://github.com/michaelfromyeg/michaeldemar.co-v4"
     },
     "scripts": {
         "s": "npm start",
@@ -35,11 +30,10 @@
         "clean": "gatsby clean",
         "t": "npm test",
         "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 0",
-        "build": "gatsby build",
+        "build": "gatsby build --prefix-paths",
         "format": "prettier --write \"**/*.{js,jsx,json,yaml,yml,css,scss}\"",
         "lint": "eslint . --fix --ext js,jsx,ts,tsx",
-        "deploy": "gatsby build && echo michaeldemar.co > public/CNAME && gh-pages -d public",
-        "prepare": "husky install"
+        "deploy": "gatsby build && gh-pages -d public"
     },
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^6.3.0",

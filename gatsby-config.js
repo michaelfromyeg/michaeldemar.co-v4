@@ -16,6 +16,7 @@ module.exports = {
             twitter: "michaelfromyeg",
         },
     },
+    pathPrefix: "/michaeldemar.co-v4",
     trailingSlash: `never`,
     plugins: [
         `gatsby-plugin-sass`,
